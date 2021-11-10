@@ -1,0 +1,25 @@
+FUNCTION dot_product(ps) : INTEGER;
+VAR
+    V1, V2:  : ARRAY_OF INTEGER; // saisie V1 et V2
+    ps:integer:=0;
+    i,j: INTEGER;
+BEGIN
+    IF length V1 = length V2 
+    then for i from 0 to length V1
+    {for j from 0 to length V2}
+    do ps= ps+ V1[i]*V2[j]
+      Else return ('not valid');
+    END IF 
+    RETURN (ps) ;
+END
+
+ALGORITHM produit scalaire
+VAR
+  i, n, ps: INTEGER 
+BEGIN
+    for i from 2 to n , 
+    ps = dot_product () 
+    IF ps= 0 then wrhite ( "les deux vecteurs sont orthogonaux")
+    else whrite ("les deux vecteurs ne sont pas orthogonaux")
+    END IF
+END
